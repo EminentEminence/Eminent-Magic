@@ -1,0 +1,1 @@
+/give @p eminent_magic_core:grimoire

@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+def mcreatorPath = providers.gradleProperty('mcreator_path')
+        .orElse(providers.environmentVariable('MCREATOR_HOME'))
+        .orNull
+
+if (mcreatorPath == null) {
+    throw new GradleException('Set -Pmcreator_path=/path/to/MCreator20253 or MCREATOR_HOME before building the plugin.')
+}
+
+def pluginInstallDir = providers.gradleProperty('plugin_install_dir')
+        .orElse("${System.getProperty('user.home')}/.mcreator/plugins")
+        .get()
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+dependencies {
+    compileOnly fileTree(dir: "${mcreatorPath}/lib", include: ['*.jar'])
+}
+
+tasks.register('pluginZip', Zip) {
+    dependsOn tasks.named('classes')
+    archiveFileName = 'eminent-magic-spell-tools.zip'
+    destinationDirectory = layout.buildDirectory.dir('libs')
+    from('plugin.json')
+    from(sourceSets.main.output)
+}
+
+tasks.register('installPlugin', Copy) {
+    dependsOn tasks.named('pluginZip')
+    from(tasks.named('pluginZip').flatMap { it.archiveFile })
+    into file(pluginInstallDir)
+}
+
+tasks.named('build') {
+    dependsOn tasks.named('installPlugin')
+}

@@ -1,0 +1,18 @@
+{
+  "_fv": 79,
+  "_type": "attribute",
+  "definition": {
+    "name": "Mana Current",
+    "minValue": 0.0,
+    "maxValue": 9999.0,
+    "defaultValue": 0.0,
+    "sentiment": "POSITIVE",
+    "addToAllEntities": false,
+    "addToPlayers": true,
+    "entities": [
+      {
+        "value": "EntityZombie"
+      }
+    ]
+  }
+}

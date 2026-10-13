@@ -1,0 +1,5 @@
+/help
+/config showfile plugin_testing COMMON
+/config showfile plugin_testing SERVER
+/config showfile plugin_testing
+/spelllist

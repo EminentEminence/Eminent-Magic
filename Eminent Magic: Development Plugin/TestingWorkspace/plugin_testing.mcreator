@@ -1,0 +1,88 @@
+{
+  "mod_elements": [
+    {
+      "name": "Test",
+      "type": "spell",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "path": "~/Examples/Spells"
+    },
+    {
+      "name": "Test2",
+      "type": "spell",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_2",
+      "path": "~/Examples/Spells"
+    },
+    {
+      "name": "SimpleWoodenStaff",
+      "type": "staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_wooden_staff",
+      "path": "~/Examples/Staffs"
+    },
+    {
+      "name": "UltimateStaff",
+      "type": "staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_staff",
+      "path": "~/Examples/Staffs"
+    },
+    {
+      "name": "IntermediateStaff",
+      "type": "staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intermediate_staff",
+      "path": "~/Examples/Staffs"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/plugintesting/PluginTestingModStaffContent.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/plugintesting/PluginTestingMod.java",
+      "src/main/java/net/mcreator/plugintesting/PluginTestingModSpellContent.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Examples",
+        "children": [
+          { "name": "Spells", "children": [] },
+          { "name": "Staffs", "children": [] }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "plugin_testing",
+    "modName": "Plugin Testing",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.plugintesting"
+  },
+  "mcreatorVersion": 202500345720
+}

@@ -1,0 +1,46 @@
+{
+  "mod_elements": [],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/emmy/eminentmagic/core/EminentMagicModSpellConfig.java",
+      "src/main/java/net/emmy/eminentmagic/core/EminentMagicModSpellContent.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/emmy/eminentmagic/core/world/inventory/EminentMagicModStaffMenu.java",
+      "src/main/java/net/emmy/eminentmagic/core/EminentMagicModStaffContent.java",
+      "src/main/java/net/emmy/eminentmagic/core/command/EminentMagicModSpellListCommand.java",
+      "src/main/java/net/emmy/eminentmagic/core/EminentMagicMod.java",
+      "src/main/resources/assets/eminent_magic/models/item/grimoire.json",
+      "src/main/resources/assets/eminent_magic/items/grimoire.json",
+      "src/main/java/net/emmy/eminentmagic/core/client/gui/EminentMagicModStaffScreen.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "eminent_magic",
+    "modName": "Eminent Magic: Core",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.emmy.eminentmagic.core"
+  },
+  "mcreatorVersion": 202500345720
+}

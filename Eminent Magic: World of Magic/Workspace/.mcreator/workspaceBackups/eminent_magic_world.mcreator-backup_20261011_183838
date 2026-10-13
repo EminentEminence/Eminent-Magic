@@ -1,0 +1,57 @@
+{
+  "mod_elements": [
+    {
+      "name": "Test",
+      "type": "spell",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test"
+    },
+    {
+      "name": "TestStaff",
+      "type": "staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_staff"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/emmy/eminentmagic/world/EminentMagicWorldModStaffContent.java",
+      "src/main/java/net/emmy/eminentmagic/world/EminentMagicWorldMod.java",
+      "src/main/java/net/emmy/eminentmagic/world/EminentMagicWorldModSpellContent.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/eminent_magic_world/items/test_staff.json",
+      "src/main/resources/assets/eminent_magic_world/models/item/test_staff.json"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "eminent_magic_world",
+    "modName": "Eminent Magic: World of Magic",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.emmy.eminentmagic.world"
+  },
+  "mcreatorVersion": 202500345720
+}

@@ -1,0 +1,1 @@
+<#-- The shared /spelllist command is owned by Eminent Magic: Core. -->

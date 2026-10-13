@@ -1,0 +1,14 @@
+{
+  "_fv": 79,
+  "_type": "staff",
+  "definition": {
+    "staffName": "Simple Wooden Staff",
+    "texture": "minecraft:stick",
+    "spellSlots": 1,
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ]
+  }
+}

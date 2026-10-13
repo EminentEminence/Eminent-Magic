@@ -1,0 +1,14 @@
+{
+  "_fv": 79,
+  "_type": "staff",
+  "definition": {
+    "staffName": "Ultimate Staff",
+    "texture": "minecraft:breeze_rod",
+    "spellSlots": 12,
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ]
+  }
+}

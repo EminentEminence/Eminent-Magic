@@ -1,0 +1,61 @@
+[11Oct2026 18:12:39.695] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, /home/emmy/.gradle/caches/neoformruntime/assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
+[11Oct2026 18:12:39.700] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
+[11Oct2026 18:12:39.700] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.8 by Eclipse Adoptium; OS Linux arch amd64 version 7.2.9-200.fc44.x86_64
+[11Oct2026 18:12:39.752] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[11Oct2026 18:12:40.164] [main/WARN] [EARLYDISPLAY/]: Failed to set window icon: [0x1000C] Wayland: The platform does not support setting the window icon
+[11Oct2026 18:12:40.170] [main/WARN] [EARLYDISPLAY/]: Failed to show and position window: [0x1000C] Wayland: The platform does not support setting the input focus
+[11Oct2026 18:12:40.189] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/emmy/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23145!/ Service=ModLauncher Env=CLIENT
+[11Oct2026 18:12:40.311] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2 GL version 3.2.0 NVIDIA 615.71.09, NVIDIA Corporation
+[11Oct2026 18:12:40.364] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[11Oct2026 18:12:40.365] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Eminent Magic: Core 1.0.0 (eminent_magic_core)
+		Minecraft 1.21.8 (minecraft)
+		NeoForge 21.8.31 (neoforge)
+		Plugin Testing 1.0.0 (plugin_testing)
+[11Oct2026 18:12:40.607] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, /home/emmy/.gradle/caches/neoformruntime/assets, --assetIndex, 26]
+[11Oct2026 18:12:41.353] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[11Oct2026 18:12:41.353] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 228 milliseconds
+[11Oct2026 18:12:43.890] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11Oct2026 18:12:43.891] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11Oct2026 18:12:43.892] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11Oct2026 18:12:43.893] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11Oct2026 18:12:43.893] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11Oct2026 18:12:43.894] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[11Oct2026 18:12:43.930] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
+[11Oct2026 18:12:44.179] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/emmy/Coding/Personal%20Projects/Eminent%20Magic/.build/plugin-testing/moddev/artifacts/neoforge-21.8.31.jar%23201!/assets/.mcassetsroot' uses unexpected schema
+[11Oct2026 18:12:44.179] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/emmy/Coding/Personal%20Projects/Eminent%20Magic/.build/plugin-testing/moddev/artifacts/neoforge-21.8.31.jar%23201!/data/.mcassetsroot' uses unexpected schema
+[11Oct2026 18:12:44.190] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11Oct2026 18:12:44.194] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[11Oct2026 18:12:44.249] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[11Oct2026 18:12:44.341] [Render thread/WARN] [net.minecraft.client.main.Main/]: Failed to create window: 
+com.mojang.blaze3d.platform.Window$WindowInitFailed: GLFW error 65548: Wayland: The platform does not provide the window position
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.bootCrash(Window.java:207) ~[neoforge-21.8.31.jar%23201!/:?]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWErrorCallbackI.callback(GLFWErrorCallbackI.java:43) ~[lwjgl-glfw-3.3.3.jar%23179!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokePPPV(Native Method) ~[lwjgl-3.3.3.jar%23191!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwGetWindowPos(GLFW.java:5185) ~[lwjgl-glfw-3.3.3.jar%23179!/:build 5]
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.takeOverWindow(Window.java:515) ~[neoforge-21.8.31.jar%23201!/:?]
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.<init>(Window.java:95) ~[neoforge-21.8.31.jar%23201!/:?]
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.VirtualScreen.newWindow(VirtualScreen.java:23) ~[neoforge-21.8.31.jar%23201!/:?]
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.<init>(Minecraft.java:471) ~[neoforge-21.8.31.jar%23201!/:?]
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.main.Main.main(Main.java:228) ~[neoforge-21.8.31.jar%23201!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:132) ~[loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:120) ~[loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:49) ~[loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:114) ~[loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:25) [loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:55) [loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:73) [loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.run(Launcher.java:104) [loader-9.0.16.jar%23155!/:9.0]
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [loader-9.0.16.jar%23155!/:9.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:203) [bootstraplauncher-9.0.16.jar:?]
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:62) [bootstraplauncher-9.0.16.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
