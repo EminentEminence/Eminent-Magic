@@ -1,1 +1,16 @@
-{}
+{
+  "gui.eminent_magic_world.hud.no_spells": "No spells",
+  "gui.eminent_magic_world.hud.cost": "Mana: %s",
+  "gui.eminent_magic_world.hud.control": "Control: %s",
+  "gui.eminent_magic_world.hud.strength": "Strength: %s",
+  "gui.eminent_magic_world.hud.mana": "Mana: %s",
+  "gui.eminent_magic_world.hud.mana_label": "Mana:",
+  "gui.eminent_magic_world.hud.control_label": "Control:",
+  "gui.eminent_magic_world.hud.strength_label": "Strength:",
+  "gui.eminent_magic_world.hud.suppression": "Suppression:",
+  "gui.eminent_magic_world.hud.suppression_value": "35%",
+  "key.categories.eminent_magic_world": "Eminent Magic",
+  "key.eminent_magic_world.control_spell_control": "Control Spell Control",
+  "key.eminent_magic_world.control_spell_strength": "Control Spell Strength",
+  "key.eminent_magic_world.cycle_spell": "Cycle Spell"
+}

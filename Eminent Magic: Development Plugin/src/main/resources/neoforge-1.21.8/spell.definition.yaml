@@ -1,5 +1,0 @@
-templates:
-  - template: spell.json.ftl
-    writer: json
-    name: "@MODDATAROOT/data/@modid/spells/@registryname.json"
-    condition: '${modid != "eminent_magic_core"}'

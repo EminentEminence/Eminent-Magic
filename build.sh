@@ -59,7 +59,8 @@ WORLD_DEPENDENCY_DIR="$ROOT_DIR/.build/world-dependencies"
 mkdir -p "$WORLD_MODS_DIR"
 mkdir -p "$WORLD_DEPENDENCY_DIR"
 printf '\n==> Copying Core mod to World runtime: %s\n' "$WORLD_MODS_DIR"
-install -m 0644 "${CORE_JARS[0]}" "$WORLD_MODS_DIR/"
+find "$WORLD_MODS_DIR" -maxdepth 1 -type f -name 'eminent_magic_core*.jar' -delete
+install -m 0644 "${CORE_JARS[0]}" "$WORLD_MODS_DIR/eminent_magic_core-1.0.0-neoforge-1.21.8.jar"
 install -m 0644 "${CORE_JARS[0]}" "$WORLD_DEPENDENCY_DIR/eminent_magic_core.jar"
 
 TESTING_WORKSPACE="$PLUGIN_PROJECT/TestingWorkspace"

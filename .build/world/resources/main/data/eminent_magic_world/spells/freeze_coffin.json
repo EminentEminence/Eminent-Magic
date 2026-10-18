@@ -1,0 +1,8 @@
+{
+  "spellName": "Freeze Coffin",
+  "baseCost": 25.0,
+  "controlScaling": 1.1,
+  "strengthScaling": 0.5,
+  "element": "water",
+  "duration": 0
+}

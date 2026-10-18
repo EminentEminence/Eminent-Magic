@@ -1,9 +1,0 @@
-templates:
-  - template: staff-model.json.ftl
-    writer: json
-    name: "@MODASSETSROOT/models/item/@registryname.json"
-    condition: '${modid != "eminent_magic_core"}'
-  - template: staff-item.json.ftl
-    writer: json
-    name: "@MODASSETSROOT/items/@registryname.json"
-    condition: '${modid != "eminent_magic_core"}'

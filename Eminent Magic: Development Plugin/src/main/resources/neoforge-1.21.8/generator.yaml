@@ -1,7 +1,0 @@
-base_templates:
-  - template: spellcontent.java.ftl
-    name: "@SRCROOT/@BASEPACKAGEPATH/@JavaModNameSpellContent.java"
-    condition: '${modid != "eminent_magic_core" && w.getGElementsOfType("spell")?size > 0}'
-  - template: staffcontent.java.ftl
-    name: "@SRCROOT/@BASEPACKAGEPATH/@JavaModNameStaffContent.java"
-    condition: '${modid != "eminent_magic_core" && w.getGElementsOfType("staff")?size > 0}'
