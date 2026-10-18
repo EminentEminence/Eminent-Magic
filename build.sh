@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 CORE_WORKSPACE="$ROOT_DIR/Eminent Magic: Core/Workspace"
-CORE_BUILD_DIR="$CORE_WORKSPACE/build"
+CORE_BUILD_DIR="$ROOT_DIR/.build/core-workspace"
 WORLD_WORKSPACE="$ROOT_DIR/Eminent Magic: World of Magic/Workspace"
 PLUGIN_PROJECT="$ROOT_DIR/Eminent Magic: Development Plugin"
 

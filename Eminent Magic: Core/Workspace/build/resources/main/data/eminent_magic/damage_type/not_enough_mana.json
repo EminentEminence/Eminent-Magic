@@ -1,0 +1,6 @@
+{
+  "exhaustion": 0.1,
+  "message_id": "not_enough_mana",
+  "scaling": "never",
+  "effects": "burning"
+}

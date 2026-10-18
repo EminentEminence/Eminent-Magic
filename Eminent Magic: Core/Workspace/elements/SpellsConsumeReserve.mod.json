@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Spells Consume Mana Reserve",
+    "description": "Allows spells to reduce a players maximum mana reserve in order to cast a spell if they have run out of Mana and Health",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

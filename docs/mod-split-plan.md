@@ -1,6 +1,6 @@
 # Eminent Magic Mod Split Plan
 
-**Status:** Draft for decisions. No project files have been moved or changed.
+**Status:** Initial MCreator workspace migration completed for Core and World of Magic. Cross-workspace API calls and compilation are intentionally deferred to the next stage.
 
 ## Goal
 
@@ -10,7 +10,7 @@ Split `Original Mod` into three independently maintainable deliverables while pr
 2. **Eminent Magic: Development Plugin**: MCreator-time authoring tools, including custom spell/staff elements and generated code that targets Core APIs. It should not be required on a player's runtime installation.
 3. **Eminent Magic: World of Magic**: the main content mod: spells, staffs, items, effects, visuals, interfaces, and other content built on Core.
 
-The `Original Mod` folder is identified as the source of truth and must remain untouched during planning and migration. The existing segment directories are currently empty at their visible roots.
+The `Original Mod` folder is the source of truth and remains untouched. Core and World of Magic are initialized as MCreator workspaces under their respective segment folders; Eminent Magic: Source remains deferred until World of Magic is finished.
 
 ## Current Baseline
 
@@ -19,7 +19,18 @@ The `Original Mod` folder is identified as the source of truth and must remain u
 - `eminent_magic.mcreator` declares 100 elements: 5 attributes, 56 procedures, 6 GUIs, 6 keybinds, 14 code elements, 1 gamerule, 1 damage type, 1 particle, 2 overlays, 3 items, 1 tab, 2 potion effects, and 2 commands.
 - Existing element names indicate the project already mixes shared systems with concrete spell and staff content. Element type alone is not enough to decide ownership; procedure dependencies and generated-code references must be audited before extraction.
 - `Original Mod/ReadMe.md` says: "ORIGINAL SOURCE CODE OF THE MOD DO NOT MODIFY AT ANY POINT". Keep it read-only and migrate by copying/exporting into the new workspaces.
-- The three segment folders have no visible project files yet. `Original Mod/mcreator.gradle` is empty; Gradle configuration is currently driven by `build.gradle` and MCreator-generated workspace files.
+- `Original Mod/mcreator.gradle` is empty; Gradle configuration is driven by `build.gradle` and MCreator-generated workspace files.
+
+## Workspace Migration Status
+
+- Initialized `Eminent Magic: Core/Workspace` with mod ID `eminent_magic`, package `emmy.eminentmagic`, the NeoForge 1.21.8/Java 21 scaffold, and 75 MCreator elements.
+- Initialized `Eminent Magic: World of Magic/Workspace` with mod ID `eminent_magic_world`, package `emmy.eminentmagic.world`, and 16 MCreator elements. Its NeoForge metadata declares Core as a required dependency.
+- Kept item-bound interfaces and adapters beside their content in World: `StaffGUI1`, `StaffGUI4`, `SpellBookGui`, `GetSpellbookSpellName`, `GetSpellbookSelfSpellName`, and `CastSelectedSpell`. Core retains the shared skill/mana interfaces and generic spell systems.
+- Copied MCreator element JSON, project folder structures, code-element Java sources, and the selected runtime resources. Regenerated element Java and full generated runtime classes were not copied; MCreator/Gradle generation and compilation are deferred.
+- Deferred seven Source elements: `GetSource`, `Ingall`, `Vesselless`, `VessellessEffectStartedapplied`, `VessellessEffectExpires`, `VessellessOnEffectActiveTick`, and `DeathReplacement`. Excluded the development-only `Development` and `TestingHotkey` elements.
+- Removed Source-specific `sourceCost`/`GetSource` logic from retained spell and mana procedure definitions, including the Source gate from `ConsumeMana`. The generic mana eligibility/payment path remains in Core.
+- The two workspace manifests, copied element JSON, Blockly XML, module IDs, element/file parity, local item-to-GUI/procedure bindings, and World-to-Core dependency metadata passed structural checks. Core's Gradle output goes to `.build/core-workspace` because `:` in the workspace directory name conflicts with Linux classpath separators. Seeding the matching MCreator Gradle cache allowed MCreator 2025.3 to open Core and regenerate 64 Java files. Core owns `CapeParticle` and `CapeRenderer`; the locked `BarrierShatterEffectProcedure.java` is tracked in its manifest; World no longer lists those moved elements; and `GetManaCost` uses its original entity-only dependency contract. The installed spell-tools plugin still logs a null-template-name exception during code generation, but Core-only Gradle `compileJava` and `build` both succeed. The packaged artifact is `.build/core-workspace/libs/eminent_magic-1.0.jar`; compiled particle registration, mana cost, and barrier shatter classes are present. No generated Java was edited by hand.
+- Known cross-workspace procedure references remain for the next API/plugin stage: Core `SpellSelector` still names World spell procedures `FreezeCoffinSpell` and `ZoltraakSpell`; World `ZoltraakSpell` still names Core `CalculateManaCost`, `ConsumeMana`, `RenderCylinder`, and `RotateXYZ`; World `CastSelectedSpell` still names Core `SpellSelector`. Replace these references with the finalized Core/plugin boundary or correctly owned local helpers before compiling World or running combined Core + World tests. Core-only compilation is verified; these remain integration gaps, not evidence that the procedure APIs are implemented.
 
 ## Proposed Boundaries
 
@@ -74,13 +85,14 @@ This is a first-pass proposal, not an instruction to move files mechanically. Ke
 | Casting and spell lookup procedures | Core framework plus World implementations | `CastSpell`, `CastSelectedSpell`, `GetSpellData`, `GetSpellExists`, `GetSpellName`, and `GetCurrentSpellID` appear shared, but audit any hard-coded spell/item IDs and move those implementations to World or data definitions. |
 | Named spell procedures | World of Magic, except Source content | Initial candidates include `ZoltraakSpell`, `FreezeCoffinSpell`, and other in-scope spells. Barrier-creating spells call Core APIs. Defer `Ingall` to Eminent Magic: Source because it is coupled to Vesselless/resurrection behavior. |
 | Barrier manager, lifecycle, collision, damage/durability, and shatter behavior | Core runtime; MCreator procedure blocks in Development Plugin; barrier-creating spells in World | Move storage, expiry, collision math/response, and generic barrier operations to Core. The plugin supplies procedure-call blocks; it does not own runtime state. World spells call Core to create barriers. Replace the current global Overworld JSON array with typed, dimension-scoped state. |
-| Shared rendering/math/code elements | Core or World, after reference audit | Generic geometry utilities may be Core; cape rendering, spell visuals, and content-specific effects belong in World. Confirm all 14 code elements and each procedure caller before assigning. |
-| Skill summary, mana displays, and spell-selection interfaces | Core | Confirmed baseline Core UI. Audit the current GUIs, overlays, layout elements, and related keybinds to separate generic screens from content-specific staff interfaces. |
+| Shared rendering/math/code elements | Core or World, after reference audit | Generic geometry utilities and the moved mana particle/cape renderer may be Core; content-specific spell visuals and effects belong in World. Core currently owns `CapeParticle` and `CapeRenderer`; confirm remaining code elements and callers before assigning. |
+| Standard skill summary, mana displays, and generic spell-selection interfaces | Core | Confirmed baseline Core UI. Item-bound book/staff GUIs and their item adapter procedures are in World of Magic. |
+| `StaffGUI1`, `StaffGUI4`, `SpellBookGui`, and item-bound book/staff procedures | World of Magic | These screens are bound to World items or opened by World item procedures. Generic spell data and casting behavior remain Core responsibilities. |
 | `Spellbook`, `CrudeStaff`, `CrystalStaff`, `Spells` tab | World of Magic | The generic staff contract belongs in Core; concrete item registrations, recipes, and tab are content. |
 | `ManaChannel` and `NotEnoughMana` | Core candidate | These look like shared mechanics/feedback. Check whether their current visuals/text are content-specific before moving. |
 | `GetSource`, legacy `sourceCost`, `Ingall`, `Vesselless`, and death-interception procedures/effects | Eminent Magic: Source (future mod; do not migrate now) | Explicitly deferred as a group. This includes source-score/requirement logic and `Ingall`'s rescue behavior; do not place them in Core, the Development Plugin, or World of Magic during this split. See [Source and Resurrection Design](../Eminent%20Magic:%20Source/Source%20and%20Resurrection%20Design.md). |
 | `OverlaySpellInfo`, `OverlayManaStats` and their generic UI support | Core | Standard spell/mana presentation belongs with the Core UI decision. Keep spell-specific art and effects in World. |
-| `CapeParticle` and content-specific visuals | World of Magic | Content-specific presentation remains in World. |
+| `CapeParticle` and `CapeRenderer` | Core | Shared mana/cape rendering elements moved to Core. Any World callers must compile against the supported Core API; other content-specific visuals remain in World. |
 | `SpellsConsumeReserve` gamerule | Core | Shared casting rule; preserve gamerule behavior and default. |
 | `GetBarriers`, `ClearBarriers` commands | Unresolved | Decide whether these are player/admin features, development diagnostics, or test commands. Keep debug-only commands out of public releases unless intended. |
 | Remaining procedures, GUIs, keybinds, and code elements | Unresolved until call graph review | Specific names include `ActivePerception`, `ToggleActivePerception*`, `SpellSelector`, `SpellbookRightclicked`, and staff tick/stop-use hooks. Assign by reusable contract versus named content, not by element category. |

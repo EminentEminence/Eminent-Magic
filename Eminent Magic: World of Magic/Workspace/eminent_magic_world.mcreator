@@ -1,0 +1,341 @@
+{
+  "mod_elements": [
+    {
+      "name": "ZoltraakSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoltraak_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": []
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "SpellBookGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_book_gui",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "SpellbookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "GetSpellbookSpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spellbook_spell_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "Spells",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spells",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "GetSpellbookSelfSpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spellbook_self_spell_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": []
+      },
+      "path": "~/Spells/SpellBook"
+    },
+    {
+      "name": "FreezeCoffinSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_coffin_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": []
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "CastSelectedSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_selected_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "StaffGUI1",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_gui_1",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "CrudeStaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_staff",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "CrystalStaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystal_staff",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "StaffGUI4",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_gui_4",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "AoeSpellTemplate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aoe_spell_template",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/Spells"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:eminentmagic:magicstaff": [
+      "CUSTOM:CrudeStaff",
+      "CUSTOM:CrystalStaff"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.eminent_magic_world.spellbook.description_0": "Will Be Cool Trust",
+      "item.eminent_magic_world.spellbook": "Spellbook",
+      "spell.eminent_magic_world.name.1": "Zoltraak",
+      "item_group.eminent_magic_world.spells": "Spells",
+      "spell.eminent_magic_world.name.0": "Error: No spell. Contact the modpack / mod developer",
+      "item.eminent_magic_world.crude_staff": "Crude Staff",
+      "item.eminent_magic_world.crystal_staff": "Crystal Staff",
+      "spell.eminent_magic_world.name.2": "Freeze Coffin"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Spells",
+        "children": [
+          {
+            "name": "SpellBook",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Spell System",
+        "children": [
+          {
+            "name": "Mana Rendering",
+            "children": []
+          },
+          {
+            "name": "SpellCasting",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Magic Items",
+        "children": [
+          {
+            "name": "Wands",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "eminent_magic_world",
+    "modName": "Eminent Magic: World of Magic",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [
+      "eminent_magic"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "emmy.eminentmagic.world"
+  },
+  "mcreatorVersion": 202500345720
+}

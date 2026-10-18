@@ -1,0 +1,177 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "hundred_by_twentyfive.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 3,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spellname",
+          "text": {
+            "fixedValue": "SpellName",
+            "name": "GetSpellName"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mana",
+          "text": {
+            "fixedValue": "Mana:"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_manacost",
+          "text": {
+            "fixedValue": "ManaCost",
+            "name": "GetManaCost"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 32,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seventyfive_by_fifteen.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 3,
+          "y": 198,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seventyfive_by_fifteen.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 3,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_control",
+          "text": {
+            "fixedValue": "Control:"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_strength",
+          "text": {
+            "fixedValue": "Strength: "
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_99",
+          "text": {
+            "fixedValue": "99",
+            "name": "GetControlSpellStrength"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 59,
+          "y": 187,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_991",
+          "text": {
+            "fixedValue": "99",
+            "name": "GetControlSpellControl"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 59,
+          "y": 201,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "IsHoldingStaff"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
