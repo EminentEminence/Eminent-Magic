@@ -1,0 +1,1549 @@
+{
+  "mod_elements": [
+    {
+      "name": "ManaReserves",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_reserves",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "ManaStrength",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_strength",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "ManaControl",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_control",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "ManaPerception",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_perception",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "GetManaReserves",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mana_reserves",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetManaReservesProcedure.java"
+        ]
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "GetManaStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mana_strength",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetManaStrengthProcedure.java"
+        ]
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "GetManaControl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mana_control",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetManaControlProcedure.java"
+        ]
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "GetManaPerception",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mana_perception",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetManaPerceptionProcedure.java"
+        ]
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "ManaSkillsSummaryGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_skills_summary_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/ManaSkillsSummaryGUIButtonMessage.java",
+          "src/main/java/emmy/eminentmagic/world/inventory/ManaSkillsSummaryGUIMenu.java",
+          "src/main/java/emmy/eminentmagic/client/gui/ManaSkillsSummaryGUIScreen.java"
+        ]
+      },
+      "path": "~/Skill Summary GUI"
+    },
+    {
+      "name": "OpenSkillsSummaryOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_skills_summary_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/OpenSkillsSummaryOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Skill Summary GUI"
+    },
+    {
+      "name": "OpenSkillsSummary",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_skills_summary",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/OpenSkillsSummaryMessage.java"
+        ]
+      },
+      "path": "~/Skill Summary GUI"
+    },
+    {
+      "name": "DoesPlayerHaveOp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "does_player_have_op",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/DoesPlayerHaveOpProcedure.java"
+        ]
+      },
+      "path": "~/Skill Summary GUI"
+    },
+    {
+      "name": "OverrideStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "override_stats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/OverrideStatsProcedure.java"
+        ]
+      },
+      "path": "~/Skill Summary GUI"
+    },
+    {
+      "name": "ControlSpellStrength",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "control_spell_strength",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/ControlSpellStrengthMessage.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ControlSpellControl",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "control_spell_control",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/ControlSpellControlMessage.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ControlSpellStrengthController",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "control_spell_strength_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/ControlSpellStrengthController.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "GetControlSpellStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_control_spell_strength",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetControlSpellStrengthProcedure.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "GetControlSpellControl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_control_spell_control",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetControlSpellControlProcedure.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ControlSpellControlController",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "control_spell_control_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/ControlSpellControlController.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ManaCurrent",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_current",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "SpellsConsumeReserve",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spells_consume_reserve",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Spell System"
+    },
+    {
+      "name": "NotEnoughMana",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_enough_mana",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eminent_magic/damage_type/not_enough_mana.json"
+        ]
+      },
+      "path": "~/Spell System"
+    },
+    {
+      "name": "SetControlSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_control_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "player",
+            "type": "entity"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/SetControlSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "SetStrengthSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_strength_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "player",
+            "type": "entity"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/SetStrengthSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ConsumeMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consume_mana",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/ConsumeManaProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "GetCurrentMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_current_mana",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetCurrentManaProcedure.java"
+        ]
+      },
+      "path": "~/Spell Scale Control"
+    },
+    {
+      "name": "ToggleActivePerceptionOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_active_perception_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/ToggleActivePerceptionOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Perception"
+    },
+    {
+      "name": "ToggleActivePerception",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_active_perception",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/ToggleActivePerceptionMessage.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Perception"
+    },
+    {
+      "name": "RenderMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_mana",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "otherEntity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/RenderManaProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Perception"
+    },
+    {
+      "name": "ActivePerception",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_perception",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/ActivePerceptionProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Perception"
+    },
+    {
+      "name": "DefaultRenderer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "default_renderer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "otherEntity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/DefaultRendererProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Rendering"
+    },
+    {
+      "name": "IsHoldingStaff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_holding_staff",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/IsHoldingStaffProcedure.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "GetCurrentSpellID",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_current_spell_id",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetCurrentSpellIDProcedure.java"
+        ]
+      },
+      "path": "~/Overlays/SpellInfoGetters"
+    },
+    {
+      "name": "GetSpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spell_name",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetSpellNameProcedure.java"
+        ]
+      },
+      "path": "~/Overlays/SpellInfoGetters"
+    },
+    {
+      "name": "CalculateManaCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_mana_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "baseCost",
+            "type": "number"
+          },
+          {
+            "name": "controlScaling",
+            "type": "number"
+          },
+          {
+            "name": "spellControl",
+            "type": "number"
+          },
+          {
+            "name": "spellStrength",
+            "type": "number"
+          },
+          {
+            "name": "strengthScaling",
+            "type": "number"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/CalculateManaCostProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "GetManaCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mana_cost",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetManaCostProcedure.java"
+        ]
+      },
+      "path": "~/Overlays/SpellInfoGetters"
+    },
+    {
+      "name": "HundredByTwentyfive",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hundred_by_twentyfive",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/world/inventory/HundredByTwentyfiveMenu.java",
+          "src/main/java/emmy/eminentmagic/client/gui/HundredByTwentyfiveScreen.java"
+        ]
+      },
+      "path": "~/Overlays/Graphics"
+    },
+    {
+      "name": "OverlaySpellInfo",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay_spell_info",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/client/screens/OverlaySpellInfoOverlay.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "SeventyfiveByFifteen",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seventyfive_by_fifteen",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/client/gui/SeventyfiveByFifteenScreen.java",
+          "src/main/java/emmy/eminentmagic/world/inventory/SeventyfiveByFifteenMenu.java"
+        ]
+      },
+      "path": "~/Overlays/Graphics"
+    },
+    {
+      "name": "OverlayManaStats",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay_mana_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/client/screens/OverlayManaStatsOverlay.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "RotateXYZ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotate_xyz",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "X",
+            "type": "number"
+          },
+          {
+            "name": "Y",
+            "type": "number"
+          },
+          {
+            "name": "Z",
+            "type": "number"
+          },
+          {
+            "name": "aX",
+            "type": "number"
+          },
+          {
+            "name": "aY",
+            "type": "number"
+          },
+          {
+            "name": "aZ",
+            "type": "number"
+          }
+        ],
+        "return_type": "vector",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/RotateXYZProcedure.java"
+        ]
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "RenderCylinder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_cylinder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "height",
+            "type": "number"
+          },
+          {
+            "name": "radius",
+            "type": "number"
+          }
+        ],
+        "return_type": "vector",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/RenderCylinderProcedure.java"
+        ]
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "RenderDirectionFromYawPitch",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_direction_from_yaw_pitch",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderDirectionFromYawPitch.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderRotateByDirection",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_rotate_by_direction",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderRotateByDirection.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCircleOutlinePoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_circle_outline_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCircleOutlinePoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCircleFillPoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_circle_fill_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCircleFillPoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCubeOutlinePoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_cube_outline_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCubeOutlinePoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCubeFillPoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_cube_fill_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCubeFillPoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCylinderOutlinePoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_cylinder_outline_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCylinderOutlinePoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderCylinderFillPoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_cylinder_fill_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderCylinderFillPoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderNgonPrismOutlinePoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_ngon_prism_outline_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderNgonPrismOutlinePoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "RenderNgonPrismFillPoint",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "render_ngon_prism_fill_point",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/RenderNgonPrismFillPoint.java"
+        ]
+      },
+      "path": "~/Render Utilities"
+    },
+    {
+      "name": "SpellSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_selector",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "spellID",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/SpellSelectorProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "SpellCycle",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spell_cycle",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/SpellCycle.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "CycleSpell",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cycle_spell",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/network/CycleSpellMessage.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "OnGameBoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "on_game_boot",
+      "metadata": {
+        "dependencies": [],
+        "files": []
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "GetSpellData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spell_data",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "spellID",
+            "type": "number"
+          }
+        ],
+        "return_type": "jsonobject",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetSpellDataProcedure.java"
+        ]
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "GetSpellExists",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "get_spell_exists",
+      "metadata": {
+        "dependencies": [],
+        "files": []
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "StaffEveryTickWhileUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_every_tick_while_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/StaffEveryTickWhileUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "StaffOnPlayerStoppedUsing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/StaffOnPlayerStoppedUsingProcedure.java"
+        ]
+      },
+      "path": "~/Magic Items/Wands"
+    },
+    {
+      "name": "OnEntityChannelingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_entity_channeling_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/OnEntityChannelingTickProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Channeling"
+    },
+    {
+      "name": "ManaChannelActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_channel_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/ManaChannelActiveTickConditionProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Channeling"
+    },
+    {
+      "name": "ManaChannel",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_channel",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/potion/ManaChannelMobEffect.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Channeling"
+    },
+    {
+      "name": "CastSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_spell",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/CastSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/SpellCasting"
+    },
+    {
+      "name": "ManaChannelEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_channel_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/ManaChannelEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Channeling"
+    },
+    {
+      "name": "GetLocalDimensionBarriers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_local_dimension_barriers",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/GetLocalDimensionBarriersProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "GetBarriers",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_barriers",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/command/GetBarriersCommand.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "SimpleBarrier",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "simple_barrier",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/SimpleBarrierProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "RemoveLocalDimensionBarriers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_local_dimension_barriers",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/RemoveLocalDimensionBarriersProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "ClearBarriers",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_barriers",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/command/ClearBarriersCommand.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "DotProduct",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dot_product",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "VectorA",
+            "type": "vector"
+          },
+          {
+            "name": "VectorB",
+            "type": "vector"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/DotProductProcedure.java"
+        ]
+      },
+      "path": "~/Utilities"
+    },
+    {
+      "name": "BarrierShatterEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "barrier_shatter_effect",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/BarrierShatterEffectProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Defensive Magic"
+    },
+    {
+      "name": "CapeRenderer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cape_renderer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "otherEntity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/CapeRendererProcedure.java"
+        ]
+      },
+      "path": "~/Spell System/Mana Rendering"
+    },
+    {
+      "name": "CapeParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/client/particle/CapeParticleParticle.java",
+          "src/main/resources/assets/eminent_magic/particles/mana_particle.json"
+        ]
+      },
+      "path": "~/Spell System/Mana Rendering"
+    },
+    {
+      "name": "TestSpellRunCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_spell_run_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/TestSpellRunCastProcedure.java"
+        ]
+      },
+      "path": "~/Testing"
+    },
+    {
+      "name": "TestSpellRunWhileCharging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_spell_run_while_charging",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/TestSpellRunWhileChargingProcedure.java"
+        ]
+      },
+      "path": "~/Testing"
+    },
+    {
+      "name": "TestSpellRunWhileChannelling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_spell_run_while_channelling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/emmy/eminentmagic/procedures/TestSpellRunWhileChannellingProcedure.java"
+        ]
+      },
+      "path": "~/Testing"
+    },
+    {
+      "name": "TestSpell",
+      "type": "eminent_magic_spell",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_spell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eminent_magic/models/item/test_spell.json",
+          "src/main/java/emmy/eminentmagic/TestSpellSpellHooks.java",
+          "src/main/resources/assets/eminent_magic/items/test_spell.json",
+          "src/main/resources/data/eminent_magic/spells/test_spell.json",
+          "src/main/java/emmy/eminentmagic/TestSpellSpellCreativeTabRegistration.java"
+        ]
+      },
+      "path": "~/Testing"
+    },
+    {
+      "name": "TestStaff1",
+      "type": "eminent_magic_staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_staff_1",
+      "metadata": {
+        "files": [
+          "src/main/java/emmy/eminentmagic/TestStaff1StaffRegistration.java",
+          "src/main/resources/data/eminent_magic/staffs/test_staff_1.json",
+          "src/main/resources/assets/eminent_magic/models/item/test_staff_1.json",
+          "src/main/resources/assets/eminent_magic/items/test_staff_1.json"
+        ]
+      },
+      "path": "~/Testing"
+    },
+    {
+      "name": "TestStaff2",
+      "type": "eminent_magic_staff",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_staff_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eminent_magic/items/test_staff_2.json",
+          "src/main/resources/assets/eminent_magic/models/item/test_staff_2.json",
+          "src/main/resources/data/eminent_magic/staffs/test_staff_2.json",
+          "src/main/java/emmy/eminentmagic/TestStaff2StaffRegistration.java"
+        ]
+      },
+      "path": "~/Testing"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "spellStrength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "spellControl",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "attribute.eminent_magic.mana_reserves": "Mana Reserves",
+      "attribute.eminent_magic.mana_strength": "Mana Strength",
+      "attribute.eminent_magic.mana_control": "Mana Control",
+      "attribute.eminent_magic.mana_perception": "Mana Perception",
+      "gui.eminent_magic.mana_skills_summary_gui.label_mana_skills_summary": "Mana Skills Summary",
+      "gui.eminent_magic.mana_skills_summary_gui.label_perception": "Perception:",
+      "gui.eminent_magic.mana_skills_summary_gui.label_strength": "Strength:",
+      "gui.eminent_magic.mana_skills_summary_gui.label_reserves": "Reserves:",
+      "gui.eminent_magic.mana_skills_summary_gui.label_control": "Control: ",
+      "key.eminent_magic.open_skills_summary": "Open Skills Summary",
+      "gui.eminent_magic.mana_skills_summary_gui.Control": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.Perception": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.button_override": "Override",
+      "gui.eminent_magic.mana_skills_summary_gui.Reserves": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.Strength": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.ManaPerception": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.ManaStrength": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.ManaControl": "0",
+      "gui.eminent_magic.mana_skills_summary_gui.ManaReserves": "0",
+      "key.eminent_magic.control_spell_strength": "Control Spell Strength",
+      "key.eminent_magic.control_spell_control": "Control Spell Control",
+      "attribute.eminent_magic.mana_current": "Mana Current",
+      "message.eminent_magic.spell_complexity_failure_1": "The spell fizzled out.",
+      "message.eminent_magic.spell_complexity_failure_2": "The spell seems to complex for you to cast at the moment.",
+      "message.eminent_magic.spell_complexity_failure_3": "You failed to cast the spell.",
+      "gamerule.spellsConsumeReserve.description": "Allows spells to reduce a players maximum mana reserve in order to cast a spell if they have run out of Mana and Health",
+      "gamerule.spellsConsumeReserve": "Spells Consume Mana Reserve",
+      "message.eminent_magic.out_of_mana": "You are out of mana and cannot cast the spell.",
+      "death.attack.not_enough_mana.item": "ERROR: if you are seeing this contact your modpack author",
+      "death.attack.not_enough_mana": "%1$s ran out of Mana",
+      "death.attack.not_enough_mana.player": "%1$s ran out of Mana whilst trying to escape %2$s",
+      "key.eminent_magic.toggle_active_perception": "Toggle Active Perception",
+      "gui.eminent_magic.overlay_spell_info.label_manacost": "ManaCost",
+      "gui.eminent_magic.overlay_spell_info.label_spellname": "SpellName",
+      "gui.eminent_magic.overlay_spell_info.label_mana": "Mana:",
+      "gui.eminent_magic.overlay_spell_info.label_strength": "Strength: ",
+      "gui.eminent_magic.overlay_spell_info.label_99": "99",
+      "gui.eminent_magic.overlay_spell_info.label_control": "Control:",
+      "gui.eminent_magic.overlay_spell_info.label_991": "99",
+      "gui.eminent_magic.overlay_mana_stats.label_35": "35%",
+      "gui.eminent_magic.overlay_mana_stats.label_suppression": "Suppression: ",
+      "gui.eminent_magic.overlay_mana_stats.label_currentmana": "CurrentMana",
+      "gui.eminent_magic.overlay_mana_stats.label_mana": "Mana: ",
+      "key.eminent_magic.cycle_spell": "Cycle Spell",
+      "effect.eminent_magic.mana_channel": "Mana Channel"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModAttributes.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModMenus.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModScreens.java",
+      "src/main/java/emmy/eminentmagic/network/MenuStateUpdateMessage.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModGameRules.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModKeyMappings.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModParticles.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModParticleTypes.java",
+      "src/main/java/emmy/eminentmagic/init/EminentMagicModMobEffects.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/emmy/eminentmagic/EminentMagicMod.java",
+      "src/main/java/emmy/eminentmagic/network/EminentMagicModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Attributes",
+        "children": []
+      },
+      {
+        "name": "Skill Summary GUI",
+        "children": []
+      },
+      {
+        "name": "Spell Scale Control",
+        "children": []
+      },
+      {
+        "name": "Spell System",
+        "children": [
+          {
+            "name": "SpellCasting",
+            "children": []
+          },
+          {
+            "name": "Mana Perception",
+            "children": []
+          },
+          {
+            "name": "Mana Rendering",
+            "children": []
+          },
+          {
+            "name": "Mana Channeling",
+            "children": []
+          },
+          {
+            "name": "Defensive Magic",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Overlays",
+        "children": [
+          {
+            "name": "SpellInfoGetters",
+            "children": []
+          },
+          {
+            "name": "Graphics",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Utilities",
+        "children": []
+      },
+      {
+        "name": "Render Utilities",
+        "children": []
+      },
+      {
+        "name": "Magic Items",
+        "children": [
+          {
+            "name": "Wands",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Testing",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "eminent_magic",
+    "modName": "Eminent Magic: Core",
+    "version": "0.1.2",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "emmy.eminentmagic"
+  },
+  "mcreatorVersion": 202500345720
+}

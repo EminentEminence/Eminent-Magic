@@ -1,0 +1,28 @@
+{
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "PROPERTY",
+      "options": [
+        ["Position X", "POSITION_X"],
+        ["Position Y", "POSITION_Y"],
+        ["Position Z", "POSITION_Z"],
+        ["Rotation X", "ROTATION_X"],
+        ["Rotation Y", "ROTATION_Y"],
+        ["Rotation Z", "ROTATION_Z"],
+        ["Radius", "RADIUS"],
+        ["Health", "HEALTH"]
+      ]
+    },
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" }
+  ],
+  "output": "Number",
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["BARRIER"],
+    "fields": ["PROPERTY"],
+    "dependencies": []
+  }
+}

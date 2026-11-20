@@ -1,0 +1,23 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "MANA",
+      "check": "Number"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Attempts to spend mana for an entity on the authoritative server.",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ENTITY", "MANA"],
+    "fields": []
+  }
+}

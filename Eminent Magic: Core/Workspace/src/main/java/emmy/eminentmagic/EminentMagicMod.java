@@ -34,6 +34,7 @@ import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodHandle;
 
 import emmy.eminentmagic.network.EminentMagicModVariables;
+import emmy.eminentmagic.init.EminentMagicModSpellItems;
 import emmy.eminentmagic.init.EminentMagicModParticleTypes;
 import emmy.eminentmagic.init.EminentMagicModMobEffects;
 import emmy.eminentmagic.init.EminentMagicModMenus;
@@ -55,6 +56,11 @@ public class EminentMagicMod {
 		EminentMagicModParticleTypes.REGISTRY.register(modEventBus);
 		EminentMagicModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
+		emmy.eminentmagic.init.StaffSpellMenus.REGISTRY.register(modEventBus);
+		EminentMagicModSpellItems.REGISTRY.register(modEventBus);
+		NeoForge.EVENT_BUS.addListener(emmy.eminentmagic.spell.SpellCatalog::addServerReloadListeners);
+		NeoForge.EVENT_BUS.addListener(emmy.eminentmagic.spell.SpellCatalog::onPlayerLoggedIn);
+		emmy.eminentmagic.gametest.CoreGameTests.TEST_FUNCTIONS.register(modEventBus);
 		// End of user code block mod init
 	}
 

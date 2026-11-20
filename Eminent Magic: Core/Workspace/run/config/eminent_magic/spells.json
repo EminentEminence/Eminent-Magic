@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "spells": [
+    {
+      "id": "eminent_magic:trigger_probe",
+      "displayName": "Test Spell",
+      "baseCost": 30.0,
+      "strengthScaling": 0.0,
+      "controlScaling": 0.0,
+      "element": "Pyra (Fire)"
+    }
+  ]
+}

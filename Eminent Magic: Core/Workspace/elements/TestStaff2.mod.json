@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "eminent_magic_staff",
+  "definition": {
+    "staffName": "Test Staff 2",
+    "staffId": "teststaff2",
+    "slotCount": 8,
+    "creativeTab": "minecraft:tools_and_utilities",
+    "texture": "minecraft:blaze_rod",
+    "modelType": "Normal"
+  }
+}

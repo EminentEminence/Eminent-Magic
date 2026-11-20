@@ -1,0 +1,28 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "SLOT",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "SPELL",
+      "check": "Spell"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Sets or clears a spell in the given slot of the entity's held staff. Returns false for an invalid staff, slot, or spell.",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ENTITY", "SLOT", "SPELL"],
+    "fields": []
+  }
+}

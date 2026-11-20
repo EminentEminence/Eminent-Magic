@@ -1,0 +1,1 @@
+emmy.eminentmagic.spell.SpellCatalog.getById(${input$SPELL_ID}).orElse(null)

@@ -1,0 +1,1 @@
+java.util.Optional.ofNullable(${input$SPELL}).map(emmy.eminentmagic.spell.SpellDefinition::controlScaling).orElse(0.0)

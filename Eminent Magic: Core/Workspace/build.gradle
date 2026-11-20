@@ -3,7 +3,11 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.107'
 }
 
-version = '1.0'
+def canonicalVersionFile = rootProject.file('../../VERSION')
+if (!canonicalVersionFile.isFile()) {
+    throw new GradleException("Missing canonical version file: ${canonicalVersionFile}")
+}
+version = providers.gradleProperty('projectVersion').getOrElse(canonicalVersionFile.text.trim())
 base.archivesName = "eminent_magic"
 
 layout.buildDirectory.set(file("../../.build/core-workspace"))
@@ -43,6 +47,13 @@ neoForge {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+def resourceVersion = version.toString()
+tasks.named('processResources') {
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand(projectVersion: resourceVersion)
+    }
 }
 
 apply from: 'mcreator.gradle'

@@ -1,0 +1,20 @@
+{
+  "type": "get_barrier_id",
+  "message0": "Get ID of barrier %1",
+  "args0": [
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" }
+  ],
+  "output": "String",
+  "colour": "#368F83",
+  "tooltip": "Returns the stable, read-only ID of a barrier, or an empty string for an empty Barrier value.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["BARRIER"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

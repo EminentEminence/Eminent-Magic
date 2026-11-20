@@ -1,0 +1,29 @@
+{
+  "type": "try_consume_mana",
+  "message0": "Try to consume %2 mana from %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "MANA",
+      "check": "Number"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Attempts to spend mana for an entity on the authoritative server.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ENTITY", "MANA"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

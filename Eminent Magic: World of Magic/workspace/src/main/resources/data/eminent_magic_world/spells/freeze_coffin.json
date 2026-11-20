@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "freeze_coffin",
+  "displayName": "Freeze Coffin",
+  "baseCost": 25.0,
+  "strengthScaling": 0.5,
+  "controlScaling": 1.1,
+  "element": "Glacies (Ice)",
+  "channelled": false,
+  "hooks": {
+    "onCast": null,
+    "whileCharging": null,
+    "whileChannelling": null
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_fv": 79,
+  "_type": "eminent_magic_spell",
+  "definition": {
+    "spellName": "Zoltraak",
+    "spellId": "zoltraak",
+    "baseCost": 25.0,
+    "strengthScaling": 1.0,
+    "controlScaling": 1.0,
+    "element": "Arcanum (Arcane)",
+    "channelled": true
+  }
+}

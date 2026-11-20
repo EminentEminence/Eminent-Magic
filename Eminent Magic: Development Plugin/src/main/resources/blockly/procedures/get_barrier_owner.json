@@ -1,0 +1,20 @@
+{
+  "type": "get_barrier_owner",
+  "message0": "Get owner UUID of barrier %1",
+  "args0": [
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" }
+  ],
+  "output": "String",
+  "colour": "#368F83",
+  "tooltip": "Returns the UUID of the player who created the barrier. Ownership is read-only.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["BARRIER"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

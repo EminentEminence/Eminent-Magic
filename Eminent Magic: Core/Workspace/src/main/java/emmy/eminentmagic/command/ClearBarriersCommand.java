@@ -31,7 +31,7 @@ public class ClearBarriersCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					RemoveLocalDimensionBarriersProcedure.execute();
+					RemoveLocalDimensionBarriersProcedure.execute(world);
 					return 0;
 				}));
 	}

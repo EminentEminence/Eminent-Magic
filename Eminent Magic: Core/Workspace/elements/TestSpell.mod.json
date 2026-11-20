@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "eminent_magic_spell",
+  "definition": {
+    "spellName": "Test Spell",
+    "spellId": "trigger_probe",
+    "baseCost": 25.0,
+    "strengthScaling": 0.0,
+    "controlScaling": 0.0,
+    "element": "Pyra (Fire)",
+    "channelled": false,
+    "creativeTab": "minecraft:combat",
+    "modelType": "Normal",
+    "onCast": {
+      "name": "TestSpellRunCast"
+    },
+    "whileCharging": {
+      "name": "OnEntityChannelingTick"
+    },
+    "whileChannelling": {
+      "name": "TestSpellRunWhileChannelling"
+    }
+  }
+}

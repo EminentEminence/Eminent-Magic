@@ -19,7 +19,7 @@ public class ManaChannelMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		ManaChannelActiveTickConditionProcedure.execute(level, entity);
+		ManaChannelActiveTickConditionProcedure.execute(entity);
 		return super.applyEffectTick(level, entity, amplifier);
 	}
 }

@@ -1,0 +1,24 @@
+{
+  "type": "cast_selected_staff_spell",
+  "message0": "Cast selected spell from held staff of %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Casts the selected spell from the entity's held staff on the server.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ENTITY"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

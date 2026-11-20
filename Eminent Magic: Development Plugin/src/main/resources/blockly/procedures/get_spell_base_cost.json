@@ -1,0 +1,24 @@
+{
+  "type": "get_spell_base_cost",
+  "message0": "Spell base mana cost of %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "SPELL_ID",
+      "check": "String"
+    }
+  ],
+  "output": "Number",
+  "colour": "#368F83",
+  "tooltip": "Returns 0 if the spell ID is invalid or unknown.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["SPELL_ID"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

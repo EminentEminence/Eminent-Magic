@@ -1,0 +1,28 @@
+{
+  "type": "create_barrier",
+  "message0": "Create barrier for %1 at x %2 y %3 z %4 with rotation x %5 y %6 z %7, radius %8, and health %9",
+  "args0": [
+    { "type": "input_value", "name": "OWNER", "check": "Entity" },
+    { "type": "input_value", "name": "X", "check": "Number" },
+    { "type": "input_value", "name": "Y", "check": "Number" },
+    { "type": "input_value", "name": "Z", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_X", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_Y", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_Z", "check": "Number" },
+    { "type": "input_value", "name": "RADIUS", "check": "Number" },
+    { "type": "input_value", "name": "HEALTH", "check": "Number" }
+  ],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "tooltip": "Creates a persistent barrier in the current dimension. Health should be the mana cost paid by the creating spell. Rotation is in degrees.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["OWNER", "X", "Y", "Z", "ROTATION_X", "ROTATION_Y", "ROTATION_Z", "RADIUS", "HEALTH"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

@@ -43,7 +43,11 @@ public class ActivePerceptionProcedure {
 					}
 				}
 			}
-			ConsumeManaProcedure.execute(world, entity, 1);
+		}
+		if (entity.getPersistentData().getBooleanOr("activePerception", false) && !world.isClientSide()) {
+			if (!(entity != null && emmy.eminentmagic.mana.ManaSpendingService.tryConsume(entity.level(), entity, 1))) {
+				entity.getPersistentData().putBoolean("activePerception", false);
+			}
 		}
 	}
 }

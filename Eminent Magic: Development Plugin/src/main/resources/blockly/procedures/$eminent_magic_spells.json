@@ -1,0 +1,8 @@
+{
+  "id": "eminent_magic_spells",
+  "name": "Eminent Magic",
+  "description": "Eminent Magic barrier, spell, and staff blocks",
+  "color": "#368F83",
+  "api": true,
+  "is_expanded": true
+}

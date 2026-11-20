@@ -1,0 +1,18 @@
+{
+  "type": "get_current_barrier",
+  "message0": "Current barrier in the barrier loop",
+  "args0": [],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "tooltip": "Returns the barrier currently being processed by a for-each-barrier loop.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": [],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "barrieriterator", "type": "barrier" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

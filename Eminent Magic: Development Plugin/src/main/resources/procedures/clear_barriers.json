@@ -1,0 +1,14 @@
+{
+  "args0": [],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": [],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }]
+  }
+}

@@ -31,16 +31,14 @@ authors="MCreator"
     ordering="AFTER"
     side="BOTH"
 
-
-
-
-
 [[dependencies.eminent_magic_world]]
     modId="eminent_magic"
     type="required"
-    versionRange="[1.0.0,)"
-    ordering="AFTER"
+    versionRange="[0,)"
+    ordering="NONE"
     side="BOTH"
+
+
 
 # Start of user code block dependencies configuration
 # End of user code block dependencies configuration

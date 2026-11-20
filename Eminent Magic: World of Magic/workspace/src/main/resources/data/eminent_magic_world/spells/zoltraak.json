@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "zoltraak",
+  "displayName": "Zoltraak",
+  "baseCost": 25.0,
+  "strengthScaling": 1.0,
+  "controlScaling": 1.0,
+  "element": "Arcanum (Arcane)",
+  "channelled": true,
+  "hooks": {
+    "onCast": null,
+    "whileCharging": null,
+    "whileChannelling": null
+  }
+}

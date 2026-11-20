@@ -4,9 +4,14 @@ plugins {
 }
 
 version = '1.0'
-base.archivesName = "eminent_magic_world"
+base.archivesName = "modid"
+layout.buildDirectory.set(file("../../.build/world-workspace"))
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+dependencies {
+    compileOnly fileTree(dir: '../../.build/core-workspace/libs', include: ['eminent_magic-*.jar'])
+}
 
 neoForge {
     version = "21.8.31"

@@ -35,6 +35,13 @@ public class OnEntityChannelingTickProcedure {
 				_level.sendParticles((SimpleParticleType) (EminentMagicModParticleTypes.MANA_PARTICLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), (int) (15 * Math.sqrt(entity.getPersistentData().getDoubleOr("timeChannelling", 0))),
 						(0.2 * Math.sqrt(entity.getPersistentData().getDoubleOr("timeChannelling", 0))), (0.5 * Math.sqrt(entity.getPersistentData().getDoubleOr("timeChannelling", 0))),
 						(0.2 * Math.sqrt(entity.getPersistentData().getDoubleOr("timeChannelling", 0))), 0);
+			if (entity.getPersistentData().getDoubleOr("timeChannelling", 0) >= 10) {// Start of user code block channeling outline
+				entity.getPersistentData().putBoolean("eminent_magic:channeling_outline", true);
+				// End of user code block channeling outline
+			} else {// Start of user code block channeling outline inactive
+				entity.getPersistentData().putBoolean("eminent_magic:channeling_outline", false);
+				// End of user code block channeling outline inactive
+			}
 			entity.getPersistentData().putDouble("timeChannelling", (entity.getPersistentData().getDoubleOr("timeChannelling", 0) + 0.1));
 		}
 	}

@@ -1,0 +1,12 @@
+{
+  "id": "eminent_magic_development",
+  "weight": 0,
+  "supportedversions": [202500345720],
+  "info": {
+    "name": "Eminent Magic Development Plugin",
+    "version": "${pluginVersion}",
+    "description": "Custom authoring elements for Eminent Magic.",
+    "author": "Eminent Magic"
+  },
+  "javaplugin": "com.eminentmagic.development.EminentMagicPlugin"
+}

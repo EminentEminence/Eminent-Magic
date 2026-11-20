@@ -1,0 +1,12 @@
+{
+  "args0": [],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": [],
+    "fields": [],
+    "dependencies": [{ "name": "barrieriterator", "type": "barrier" }]
+  }
+}

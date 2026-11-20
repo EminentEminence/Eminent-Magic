@@ -1,0 +1,18 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Casts the selected spell from the entity's held staff on the server.",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ENTITY"],
+    "fields": []
+  }
+}

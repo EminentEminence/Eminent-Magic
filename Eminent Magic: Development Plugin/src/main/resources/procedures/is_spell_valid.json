@@ -1,0 +1,17 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "SPELL",
+      "check": "Spell"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["SPELL"],
+    "fields": []
+  }
+}

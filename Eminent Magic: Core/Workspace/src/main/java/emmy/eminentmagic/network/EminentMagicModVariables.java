@@ -33,7 +33,6 @@ import emmy.eminentmagic.EminentMagicMod;
 public class EminentMagicModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, EminentMagicMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
-	public static com.google.gson.JsonArray OverworldBarriers = new com.google.gson.JsonArray();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

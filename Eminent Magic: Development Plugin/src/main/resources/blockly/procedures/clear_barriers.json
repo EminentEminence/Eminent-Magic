@@ -1,0 +1,19 @@
+{
+  "type": "clear_barriers",
+  "message0": "Clear all barriers in the current dimension",
+  "args0": [],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#368F83",
+  "tooltip": "Removes every barrier in the current dimension. Use with care.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": [],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

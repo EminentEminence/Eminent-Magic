@@ -1,0 +1,12 @@
+{
+  "args0": [{ "type": "input_value", "name": "ID", "check": "String" }],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ID"],
+    "fields": [],
+    "dependencies": [{ "name": "world", "type": "world" }]
+  }
+}

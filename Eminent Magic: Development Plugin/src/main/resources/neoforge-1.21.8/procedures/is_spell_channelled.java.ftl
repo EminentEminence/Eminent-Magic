@@ -1,0 +1,1 @@
+java.util.Optional.ofNullable(${input$SPELL}).map(emmy.eminentmagic.spell.SpellDefinition::channelled).orElse(false)

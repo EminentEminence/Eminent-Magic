@@ -1,0 +1,20 @@
+{
+  "type": "get_barrier_by_id",
+  "message0": "Get barrier with ID %1",
+  "args0": [
+    { "type": "input_value", "name": "ID", "check": "String" }
+  ],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "tooltip": "Looks up a barrier by its stable ID in the current dimension. Returns an empty Barrier when not found.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ID"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

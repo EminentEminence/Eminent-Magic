@@ -1,0 +1,20 @@
+{
+  "type": "is_barrier_valid",
+  "message0": "Is barrier %1 valid?",
+  "args0": [
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Returns true when the Barrier value still exists in the current dimension.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["BARRIER"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

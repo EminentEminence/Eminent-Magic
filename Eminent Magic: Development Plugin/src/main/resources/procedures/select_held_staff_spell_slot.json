@@ -1,0 +1,23 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "SLOT",
+      "check": "Number"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Selects the given spell slot on the entity's held staff. Returns false for an invalid staff or slot.",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ENTITY", "SLOT"],
+    "fields": []
+  }
+}

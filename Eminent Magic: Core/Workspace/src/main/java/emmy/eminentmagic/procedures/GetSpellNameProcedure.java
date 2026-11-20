@@ -1,15 +1,9 @@
 package emmy.eminentmagic.procedures;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-
 public class GetSpellNameProcedure {
-	public static String execute(Entity entity) {
-		if (entity == null)
-			return "";
-		if (GetCurrentSpellIDProcedure.execute(entity) > 0) {
-			return Component.translatable(("spell.eminent_magic.name." + new java.text.DecimalFormat("##").format(GetCurrentSpellIDProcedure.execute(entity)))).getString();
-		}
-		return "No Spell Selected";
+	public static String execute() {
+		return net.minecraft.client.Minecraft.getInstance().player instanceof net.minecraft.world.entity.player.Player player
+				? emmy.eminentmagic.staff.StaffService.getSelectedSpell(player).map(emmy.eminentmagic.spell.SpellDefinition::displayName).orElse("No Spell Selected")
+				: "No Spell Selected";
 	}
 }

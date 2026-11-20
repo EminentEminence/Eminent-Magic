@@ -1,0 +1,20 @@
+{
+  "type": "remove_barrier_by_id",
+  "message0": "Remove barrier with ID %1",
+  "args0": [
+    { "type": "input_value", "name": "ID", "check": "String" }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Removes the barrier with this stable ID from the current dimension.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ID"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

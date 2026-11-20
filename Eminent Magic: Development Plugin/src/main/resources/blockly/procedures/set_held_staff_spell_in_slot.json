@@ -1,0 +1,34 @@
+{
+  "type": "set_held_staff_spell_in_slot",
+  "message0": "Set spell in slot %2 of held staff of %1 to %3",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "SLOT",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "SPELL",
+      "check": "Spell"
+    }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Sets or clears a spell in the given slot. Returns false for an invalid staff, slot, or spell.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ENTITY", "SLOT", "SPELL"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

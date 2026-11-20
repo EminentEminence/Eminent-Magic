@@ -1,0 +1,20 @@
+{
+  "type": "remove_barrier",
+  "message0": "Remove barrier %1",
+  "args0": [
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Removes the barrier from the current dimension. Returns false if it no longer exists.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["BARRIER"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

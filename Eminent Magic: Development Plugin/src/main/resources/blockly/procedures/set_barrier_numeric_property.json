@@ -1,0 +1,35 @@
+{
+  "type": "set_barrier_numeric_property",
+  "message0": "Set %1 of barrier %2 to %3",
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "PROPERTY",
+      "options": [
+        ["Position X", "POSITION_X"],
+        ["Position Y", "POSITION_Y"],
+        ["Position Z", "POSITION_Z"],
+        ["Rotation X", "ROTATION_X"],
+        ["Rotation Y", "ROTATION_Y"],
+        ["Rotation Z", "ROTATION_Z"],
+        ["Radius", "RADIUS"],
+        ["Health", "HEALTH"]
+      ]
+    },
+    { "type": "input_value", "name": "BARRIER", "check": "Barrier" },
+    { "type": "input_value", "name": "VALUE", "check": "Number" }
+  ],
+  "output": "Boolean",
+  "colour": "#368F83",
+  "tooltip": "Sets the selected property and returns whether the update succeeded. Setting health to zero shatters the barrier.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["BARRIER", "VALUE"],
+    "fields": ["PROPERTY"],
+    "statements": [],
+    "dependencies": [{ "name": "world", "type": "world" }],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

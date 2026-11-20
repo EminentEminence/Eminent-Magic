@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "trigger_probe",
+  "displayName": "Test Spell",
+  "baseCost": 25,
+  "strengthScaling": 0,
+  "controlScaling": 0,
+  "element": "Pyra (Fire)",
+  "channelled": false,
+  "hooks": {
+    "onCast": "TestSpellRunCast",
+    "whileCharging": "OnEntityChannelingTick",
+    "whileChannelling": "TestSpellRunWhileChannelling"
+  }
+}

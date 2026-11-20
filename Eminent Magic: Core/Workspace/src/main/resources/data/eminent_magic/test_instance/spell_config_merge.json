@@ -1,0 +1,9 @@
+{
+  "environment": "minecraft:default",
+  "structure": "eminent_magic:core_test_empty",
+  "max_ticks": 20,
+  "required": true,
+  "manual_only": true,
+  "type": "minecraft:function",
+  "function": "eminent_magic:spell_config_merge"
+}

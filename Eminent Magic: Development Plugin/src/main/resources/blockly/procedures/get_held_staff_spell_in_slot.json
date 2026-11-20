@@ -1,0 +1,29 @@
+{
+  "type": "get_held_staff_spell_in_slot",
+  "message0": "Get spell in slot %2 of the held staff of %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "SLOT",
+      "check": "Number"
+    }
+  ],
+  "output": "Spell",
+  "colour": "#368F83",
+  "tooltip": "Gets the spell in the given slot of the entity's held staff.",
+  "helpUrl": "",
+  "mcreator": {
+    "toolbox_id": "eminent_magic_spells",
+    "inputs": ["ENTITY", "SLOT"],
+    "fields": [],
+    "statements": [],
+    "dependencies": [],
+    "warnings": [],
+    "group": "eminent_magic"
+  }
+}

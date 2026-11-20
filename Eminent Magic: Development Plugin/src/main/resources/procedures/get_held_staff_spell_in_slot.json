@@ -1,0 +1,23 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "ENTITY",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "SLOT",
+      "check": "Number"
+    }
+  ],
+  "output": "Spell",
+  "colour": "#368F83",
+  "tooltip": "Gets the spell in the given slot of the entity's held staff.",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["ENTITY", "SLOT"],
+    "fields": []
+  }
+}

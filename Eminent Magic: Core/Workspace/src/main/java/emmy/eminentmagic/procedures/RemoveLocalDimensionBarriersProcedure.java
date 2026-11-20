@@ -1,9 +1,9 @@
 package emmy.eminentmagic.procedures;
 
-import emmy.eminentmagic.network.EminentMagicModVariables;
+import net.minecraft.world.level.LevelAccessor;
 
 public class RemoveLocalDimensionBarriersProcedure {
-	public static void execute() {
-		EminentMagicModVariables.OverworldBarriers = new com.google.gson.JsonArray();
+	public static void execute(LevelAccessor world) {
+		emmy.eminentmagic.barrier.BarrierService.clear(world);
 	}
 }

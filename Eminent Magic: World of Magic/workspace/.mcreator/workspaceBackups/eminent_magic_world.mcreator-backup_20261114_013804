@@ -1,0 +1,50 @@
+{
+  "mod_elements": [
+    {
+      "name": "Zoltraak",
+      "type": "eminent_magic_spell",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoltraak",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/emmy/eminentmagic/worldofmagic/EminentMagicWorldMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "eminent_magic_world",
+    "modName": "Eminent Magic: World of Magic",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [
+      "eminent_magic"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "emmy.eminentmagic.worldofmagic"
+  },
+  "mcreatorVersion": 202500345720
+}

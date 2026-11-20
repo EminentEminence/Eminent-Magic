@@ -2,8 +2,10 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 312,
+  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
-    "expandedPaths": []
+    "expandedPaths": [
+      "[, Eminent Magic: World of Magic]"
+    ]
   }
 }

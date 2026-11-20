@@ -1,0 +1,16 @@
+templates:
+  - template: staff.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/@NAMEStaffRegistration.java"
+  - template: staff.json.ftl
+    writer: json
+    name: "@MODDATAROOT/staffs/@registryname.json"
+  - template: item_model_definition.json.ftl
+    writer: json
+    name: "@MODASSETSROOT/items/@registryname.json"
+  - template: item_model.json.ftl
+    writer: json
+    name: "@MODASSETSROOT/models/item/@registryname.json"
+  - template: item_gui_model.json.ftl
+    writer: json
+    condition: hasGUITexture()
+    name: "@MODASSETSROOT/models/item/@registryname_gui.json"

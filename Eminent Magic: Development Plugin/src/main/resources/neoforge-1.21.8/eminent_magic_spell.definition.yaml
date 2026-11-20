@@ -1,0 +1,18 @@
+templates:
+  - template: spell.json.ftl
+    writer: json
+    name: "@MODDATAROOT/spells/@registryname.json"
+  - template: spellhooks.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/@NAMESpellHooks.java"
+  - template: spell_creative_tab.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/@NAMESpellCreativeTabRegistration.java"
+  - template: item_model_definition.json.ftl
+    writer: json
+    name: "@MODASSETSROOT/items/@registryname.json"
+  - template: item_model.json.ftl
+    writer: json
+    name: "@MODASSETSROOT/models/item/@registryname.json"
+  - template: item_gui_model.json.ftl
+    writer: json
+    condition: hasGUITexture()
+    name: "@MODASSETSROOT/models/item/@registryname_gui.json"

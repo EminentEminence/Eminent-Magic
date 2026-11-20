@@ -47,11 +47,11 @@ public class OverlaySpellInfoOverlay {
 
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					GetSpellNameProcedure.execute(entity), 6, h - 25, -13421773, false);
+					GetSpellNameProcedure.execute(), 6, h - 25, -13421773, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.eminent_magic.overlay_spell_info.label_mana"), 6, h - 16, -10066330, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					GetManaCostProcedure.execute(entity), 32, h - 16, -3342337, false);
+					GetManaCostProcedure.execute(), 32, h - 16, -3342337, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.eminent_magic.overlay_spell_info.label_control"), 6, h - 39, -10066330, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.eminent_magic.overlay_spell_info.label_strength"), 6, h - 53, -10066330, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,

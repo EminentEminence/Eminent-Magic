@@ -1,0 +1,30 @@
+/give @s eminent_magic:spell[minecraft:custom_data={spellId:"eminent_magic_world:trigger_probe"}]
+/attribute @s eminent_magic:mana_reserves base set 100
+/attribute @s eminent_magic:mana_current base set 100
+/give @s eminent_magic:spell_staff[minecraft:custom_data={spellId:"eminent_magic:trigger_probe"}] 1
+/attribute @s eminent_magic:mana_control base set 10
+/gamemode survival
+/gamemode creative
+/test run eminent_magic:mana_attributes
+/test run eminent_magic:mana_rejections
+/test run eminent_magic:mana_spending
+/test run eminent_magic:spell_catalog
+/test run eminent_magic:spell_cost
+/test run eminent_magic:spell_item_round_trip
+/test runall
+/test run eminent_magic:staff_casting
+/test run eminent_magic:staff_hand_priority
+/test run eminent_magic:staff_slot_operations
+/give @p eminent_magic:spell
+/attribute Dev eminent_magic:mana_strength get
+/attribute Dev eminent_magic:mana_strength base set 10
+/test run eminent_magic:barrier_codec
+/test run eminent_magic:barrier_degradation
+/test run eminent_magic:barrier_geometry
+/test run eminent_magic:barrier_replacement_refund
+/test run eminent_magic:spell_control_adjustments
+/gamerule barrierDegradationRate 0
+/time set day
+/gamemode survival
+/attribute Dev eminent_magic:mana_current base set 50
+/eminentmagic spells reload

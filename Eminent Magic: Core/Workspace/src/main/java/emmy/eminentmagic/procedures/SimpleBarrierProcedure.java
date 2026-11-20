@@ -1,39 +1,27 @@
 package emmy.eminentmagic.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.phys.Vec3;
 
-import emmy.eminentmagic.network.EminentMagicModVariables;
+import emmy.eminentmagic.barrier.Barrier;
+import emmy.eminentmagic.barrier.BarrierService;
 
 public class SimpleBarrierProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		com.google.gson.JsonObject barrierJsonObject = new com.google.gson.JsonObject();
-		if (entity instanceof Player _clientCheck && !_clientCheck.level().isClientSide()) {
+		var hit = entity.level().clip(new ClipContext(entity.getEyePosition(1f),
+				entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(2)),
+				ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos();
+		Vec3 position = new Vec3(hit.getX(), hit.getY(), hit.getZ());
+		Barrier createdBarrier = BarrierService.create(world, entity, position, Vec3.ZERO, 1, 20);
+		if (createdBarrier != null && BarrierService.getBarrier(world, createdBarrier.id().toString()).isPresent()) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Creating Barrier"), false);
-			Vec3 start = entity.getEyePosition(1f);
-			Vec3 end = start.add(entity.getViewVector(1f).scale(1.0)); // or your desired range
-			BlockHitResult hit = entity.level().clip(new ClipContext(start, end, ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity));
-			Vec3 hitLocation = hit.getLocation();
-			barrierJsonObject.addProperty("originX", hitLocation.x);
-			barrierJsonObject.addProperty("originY", hitLocation.y);
-			barrierJsonObject.addProperty("originZ", hitLocation.z);
-			barrierJsonObject.addProperty("angleX", (entity.getLookAngle().x));
-			barrierJsonObject.addProperty("angleY", (entity.getLookAngle().y));
-			barrierJsonObject.addProperty("angleZ", (entity.getLookAngle().z));
-			barrierJsonObject.addProperty("mana", 20);
-			barrierJsonObject.addProperty("scale", 2);
-			barrierJsonObject.addProperty("remainingDuration", 600);
-			barrierJsonObject.addProperty("owner", (entity.getStringUUID()));
-			EminentMagicModVariables.OverworldBarriers.add(barrierJsonObject);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("Number of Barriers: " + EminentMagicModVariables.OverworldBarriers.size())), false);
+				_player.displayClientMessage(Component.literal("Created barrier"), false);
 		}
 	}
 }

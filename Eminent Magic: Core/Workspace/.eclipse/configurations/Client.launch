@@ -2,9 +2,9 @@
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Workspace"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" &quot;@/home/emmy/Coding/Personal Projects/Eminent Magic/.build/core-workspace/moddev/clientRunProgramArgs.txt&quot;"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" &quot;@/home/emmy/Coding/Personal Projects/Eminent Magic/.build/core-workspace/moddev/clientRunVmArgs.txt&quot; &quot;-Dfml.modFolders=mcreator%%/home/emmy/Coding/Personal Projects/Eminent Magic/Eminent Magic: Core/Workspace/bin/main&quot;"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/home/emmy/Coding/Personal Projects/Eminent Magic/Eminent Magic: Core/Workspace/run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" &quot;@/mnt/nas/Coding/Personal Projects/Eminent Magic/.build/core-workspace/moddev/clientRunProgramArgs.txt&quot;"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" &quot;@/mnt/nas/Coding/Personal Projects/Eminent Magic/.build/core-workspace/moddev/clientRunVmArgs.txt&quot; &quot;-Dfml.modFolders=mcreator%%/mnt/nas/Coding/Personal Projects/Eminent Magic/Eminent Magic: Core/Workspace/bin/main&quot;"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/mnt/nas/Coding/Personal Projects/Eminent Magic/Eminent Magic: Core/Workspace/run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>

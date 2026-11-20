@@ -1,0 +1,22 @@
+{
+  "args0": [
+    { "type": "input_value", "name": "OWNER", "check": "Entity" },
+    { "type": "input_value", "name": "X", "check": "Number" },
+    { "type": "input_value", "name": "Y", "check": "Number" },
+    { "type": "input_value", "name": "Z", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_X", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_Y", "check": "Number" },
+    { "type": "input_value", "name": "ROTATION_Z", "check": "Number" },
+    { "type": "input_value", "name": "RADIUS", "check": "Number" },
+    { "type": "input_value", "name": "HEALTH", "check": "Number" }
+  ],
+  "output": "Barrier",
+  "colour": "#368F83",
+  "mcreator": {
+    "group": "eminent_magic",
+    "toolbox_id": "eminent_magic",
+    "inputs": ["OWNER", "X", "Y", "Z", "ROTATION_X", "ROTATION_Y", "ROTATION_Z", "RADIUS", "HEALTH"],
+    "fields": [],
+    "dependencies": [{ "name": "world", "type": "world" }]
+  }
+}

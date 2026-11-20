@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.eminentmagic'
+def canonicalVersionFile = rootProject.file('../VERSION')
+if (!canonicalVersionFile.isFile()) {
+	throw new GradleException("Missing canonical version file: ${canonicalVersionFile}")
+}
+version = providers.gradleProperty('projectVersion').getOrElse(canonicalVersionFile.text.trim())
+
+def mcreatorHome = providers.gradleProperty('mcreatorHome')
+	.orElse(providers.environmentVariable('MCREATOR_HOME'))
+	.orNull
+
+if (mcreatorHome == null) {
+	throw new GradleException('Set -PmcreatorHome or MCREATOR_HOME to the MCreator installation directory.')
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+	flatDir {
+		dirs "${mcreatorHome}/lib", "${mcreatorHome}/plugins"
+	}
+}
+
+dependencies {
+	compileOnly fileTree(dir: mcreatorHome, includes: ['lib/**/*.jar', 'plugins/**/*.jar'])
+}
+
+layout.buildDirectory.set(file('../.build/development-plugin'))
+
+tasks.withType(JavaCompile).configureEach {
+	options.release = 21
+	options.encoding = 'UTF-8'
+}
+
+def resourceVersion = version.toString()
+tasks.named('processResources') {
+	filesMatching('plugin.json') {
+		expand(pluginVersion: resourceVersion)
+	}
+}
+
+tasks.named('jar') {
+	archiveBaseName = 'eminent-magic-development-plugin'
+}
