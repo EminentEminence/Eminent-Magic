@@ -16,7 +16,6 @@ The repository is split into independently understandable parts:
 - **Source** contains design notes for a future standalone Source module. Its
   mechanics are intentionally not part of the current Core/World of Magic
   contract.
-- **Original Mod** is preserved legacy source. Do not modify it.
 
 ## Current version
 
@@ -43,9 +42,6 @@ compiles and installs the Development Plugin.
 .
 ├── VERSION
 ├── build.sh
-├── docs/
-│   ├── core-gametests.md
-│   └── mod-split-plan.md
 ├── Eminent Magic: Core/
 │   └── Workspace/
 │       ├── eminent_magic.mcreator
@@ -62,7 +58,6 @@ compiles and installs the Development Plugin.
 │       └── src/main/
 ├── Eminent Magic: Source/
 │   └── Source and Resurrection Design.md
-└── Original Mod/
 ```
 
 Build products are written to `.build/`. Generated workspaces, run data, logs,
@@ -215,14 +210,6 @@ When runtime behavior changes, update the corresponding MCreator element
 definitions, Blockly JSON, templates, and generated-code integration so the
 procedures remain editable in MCreator.
 
-### Future Source module
-
-[`Eminent Magic: Source/Source and Resurrection Design.md`](<./Eminent Magic: Source/Source and Resurrection Design.md>)
-records deferred design work around Source scoring, Source requirements,
-Vesselless, death interception, and Ingall. These mechanics are not finalized
-and should not be added to Core or World of Magic as if they were current
-runtime APIs.
-
 ## Versioning
 
 Update `VERSION` first, then synchronize MCreator workspace metadata when
@@ -245,20 +232,3 @@ definitions, and generated-code templates are part of the editable project.
 Prefer changing the MCreator representation and its templates over patching
 generated Java output. Generated output can be regenerated and should not be
 treated as the durable implementation.
-
-The `Original Mod` directory is a historical reference and is explicitly
-preserved unchanged.
-
-## Documentation
-
-- [`docs/core-gametests.md`](./docs/core-gametests.md) — Core GameTest scope
-  and commands.
-- [`docs/mod-split-plan.md`](./docs/mod-split-plan.md) — current module
-  boundaries and migration plan.
-- [`Eminent Magic: Source/Source and Resurrection Design.md`](<./Eminent Magic: Source/Source and Resurrection Design.md>)
-  — deferred Source and resurrection design.
-
-## License
-
-No project license is currently specified in the repository. Treat the code
-and assets as all-rights-reserved unless the project owner provides a license.
