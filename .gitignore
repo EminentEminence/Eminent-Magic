@@ -5,3 +5,15 @@ Eminent Magic: World of Magic OLDE/
 Eminent Magic: Source/
 docs/
 .build/
+
+# Generated Gradle and Minecraft runtime data from MCreator workspaces.
+Eminent Magic: Core/Workspace/build/
+Eminent Magic: Core/Workspace/run/
+Eminent Magic: Development Plugin/TestingWorkspace/build/
+Eminent Magic: Development Plugin/TestingWorkspace/run/
+Eminent Magic: World of Magic OLDE/Workspace/build/
+Eminent Magic: World of Magic OLDE/Workspace/run/
+Eminent Magic: World of Magic/workspace/build/
+Eminent Magic: World of Magic/workspace/run/
+Original Mod/build/
+Original Mod/run/
